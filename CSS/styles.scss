@@ -136,3 +136,40 @@
 
 
 }
+
+.featured{
+    
+    &-tape{
+        padding: 22px 0px;
+        background: url(../IMG/back.jpg);
+    }
+    &-title{
+        color: $white;
+        padding-left: 40px;
+    }
+    &-box{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-top: 48px;
+        flex-wrap: wrap;
+    }
+    &-card{
+        padding-bottom: 35px;
+        width: 253px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &-price{
+    
+    }
+    &-name{
+    }
+}
+.product-name{
+    font-size: 27px;
+    line-height: 0.93;
+    color: #afafaf;
+    text-transform: uppercase;
+}
