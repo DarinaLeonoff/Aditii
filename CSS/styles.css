@@ -126,6 +126,9 @@
 
 .hit-img {
   margin-right: 101px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .hit-title {
@@ -170,14 +173,21 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-right: 1px solid rgba(0, 0, 0, 0.3);
-  padding: 25px 0px 33px 0px;
+  padding: 25px 60px 33px 20px;
 }
 
 .row-product:last-child {
   border: none;
+}
+
+.row-img {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .row-title {
@@ -236,6 +246,9 @@
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-bottom: 10px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .featured-card-bottom {

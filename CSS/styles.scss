@@ -103,6 +103,7 @@
     }
     &-img{
         margin-right: 101px;
+        height: max-content;
     }
     &-title{
         font-size: 60px;
@@ -136,12 +137,15 @@
     }
     &-product{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         border-right: 1px solid rgba(0, 0, 0, 0.3);
-        padding: 25px 0px 33px 0px;
+        padding: 25px 60px 33px 20px;
         &:last-child{
             border: none;
         }
+    }
+    &-img{
+        height: max-content;
     }
     &-title{
         width: 75px;
@@ -185,6 +189,7 @@
     &-img{
         align-self: flex-start;
         margin-bottom: 10px;
+        height: max-content;
     }
     &-card-bottom{
         display: flex;
