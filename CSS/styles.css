@@ -176,8 +176,11 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-right: 1px solid rgba(0, 0, 0, 0.3);
-  padding: 25px 60px 33px 20px;
+  padding: 20px 60px 20px 20px;
 }
 
 .row-product:last-child {
