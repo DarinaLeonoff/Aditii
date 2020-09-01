@@ -7,6 +7,7 @@
 @font-face{
     font-family: "BebasNeue";
     src: url(../Fonts/BebasNeue-Regular.ttf);
+    font-weight: normal;
 }
 
 *{
@@ -29,6 +30,7 @@
 }
 
 .btn{
+    font-family: "BebasNeue";
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
@@ -38,7 +40,12 @@
 .buy-btn{
     padding: 9px 15px;
     border-radius: 3px;
+    border: 2px solid $green-back;
     background-color: $green-back;
+    &:hover{
+        background-color: $white;
+        color: $green-back;
+    }
 }
 
 .container{
@@ -81,6 +88,9 @@
         text-decoration: none;
         text-transform: uppercase;
         color: $white;
+        &:hover{
+            text-decoration: underline;
+        }
     }
 }
 
@@ -93,6 +103,7 @@
     }
     &-img{
         margin-right: 101px;
+        height: max-content;
     }
     &-title{
         font-size: 60px;
@@ -111,6 +122,10 @@
         padding: 10px 25px;
         border: 3px solid $white;
         border-radius: 5px;
+        &:hover{
+            background-color: $white;
+            color: $blue-back;
+        }
     }
 }
 
@@ -122,12 +137,16 @@
     }
     &-product{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items: center;
         border-right: 1px solid rgba(0, 0, 0, 0.3);
-        padding: 25px 0px 33px 0px;
+        padding: 20px 60px 20px 20px;
         &:last-child{
             border: none;
         }
+    }
+    &-img{
+        height: max-content;
     }
     &-title{
         width: 75px;
@@ -135,4 +154,95 @@
     }
 
 
+}
+
+.featured{
+    
+    &-tape{
+        padding: 22px 0px;
+        background: url(../IMG/back.jpg);
+    }
+    &-title{
+        color: $white;
+        padding-left: 40px;
+    }
+    &-box{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-top: 48px;
+        flex-wrap: wrap;
+    }
+    &-card{
+        min-height: 260px;
+        padding-bottom: 35px;
+        padding-top: 21px;
+        border-bottom: 5px solid $green-back;
+        box-sizing: border-box;
+        width: 253px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        box-shadow:0px 0px 3px 2px rgba(0,0,0,0.25);
+        margin-bottom: 47px;
+    }
+    &-img{
+        align-self: flex-start;
+        margin-bottom: 10px;
+        height: max-content;
+    }
+    &-card-bottom{
+        display: flex;
+        
+        align-self: flex-end;
+    }
+    &-price{
+        align-self: center;
+    margin-right: 15px;
+    }
+    &-name{
+        margin-bottom: 12px;
+        text-align: center;
+        flex-basis: 100%;
+    }
+}
+.product-name{
+    font-size: 27px;
+    line-height: 0.93;
+    color: #afafaf;
+    text-transform: uppercase;
+    font-weight: bolder;
+
+}
+
+.footer{
+    background-color: $blue-back;
+    &-top{
+        display: flex;
+        justify-content: space-between;
+        padding: 42px 0;
+        padding-left: 40px;
+
+    }
+    &-title{
+        color: $white;
+        margin-bottom: 27px;
+    }
+    &-list{
+        list-style: none;
+    }
+    &-link{
+        text-decoration: none;
+        color: $white;
+        line-height: 1.87;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &-copyright{
+        padding: 15px 0;
+        text-align: center;
+        background-color: $footer-copy;
+    }
 }

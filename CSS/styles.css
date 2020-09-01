@@ -6,6 +6,7 @@
 @font-face {
   font-family: "BebasNeue";
   src: url(../Fonts/BebasNeue-Regular.ttf);
+  font-weight: normal;
 }
 
 * {
@@ -28,6 +29,7 @@
 }
 
 .btn {
+  font-family: "BebasNeue";
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
@@ -37,7 +39,13 @@
 .buy-btn {
   padding: 9px 15px;
   border-radius: 3px;
+  border: 2px solid #3cc395;
   background-color: #3cc395;
+}
+
+.buy-btn:hover {
+  background-color: #fff;
+  color: #3cc395;
 }
 
 .container {
@@ -100,6 +108,10 @@
   color: #fff;
 }
 
+.header-link:hover {
+  text-decoration: underline;
+}
+
 .hit {
   padding: 67px 0 54px 0;
   background-image: url(../IMG/back.jpg);
@@ -114,6 +126,9 @@
 
 .hit-img {
   margin-right: 101px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .hit-title {
@@ -137,6 +152,11 @@
   border-radius: 5px;
 }
 
+.hit-btn:hover {
+  background-color: #fff;
+  color: #3cc3b5;
+}
+
 .row {
   -webkit-box-shadow: 1px 1.7px 3px 0 rgba(0, 0, 0, 0.13);
           box-shadow: 1px 1.7px 3px 0 rgba(0, 0, 0, 0.13);
@@ -153,18 +173,154 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-right: 1px solid rgba(0, 0, 0, 0.3);
-  padding: 25px 0px 33px 0px;
+  padding: 20px 60px 20px 20px;
 }
 
 .row-product:last-child {
   border: none;
 }
 
+.row-img {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
 .row-title {
   width: 75px;
   margin-bottom: 20px;
+}
+
+.featured-tape {
+  padding: 22px 0px;
+  background: url(../IMG/back.jpg);
+}
+
+.featured-title {
+  color: #fff;
+  padding-left: 40px;
+}
+
+.featured-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 40px;
+  padding-top: 48px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.featured-card {
+  min-height: 260px;
+  padding-bottom: 35px;
+  padding-top: 21px;
+  border-bottom: 5px solid #3cc395;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 253px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.25);
+  margin-bottom: 47px;
+}
+
+.featured-img {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 10px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.featured-card-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.featured-price {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 15px;
+}
+
+.featured-name {
+  margin-bottom: 12px;
+  text-align: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.product-name {
+  font-size: 27px;
+  line-height: 0.93;
+  color: #afafaf;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.footer {
+  background-color: #3cc3b5;
+}
+
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 42px 0;
+  padding-left: 40px;
+}
+
+.footer-title {
+  color: #fff;
+  margin-bottom: 27px;
+}
+
+.footer-list {
+  list-style: none;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #fff;
+  line-height: 1.87;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  padding: 15px 0;
+  text-align: center;
+  background-color: #2da89b;
 }
 /*# sourceMappingURL=styles.css.map */
